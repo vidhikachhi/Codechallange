@@ -1,1 +1,31 @@
-# Codechallange
+#Codechallange1
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n,N,X,t=0;
+    cin>>n;
+     for(int i=0;i<n;i++)
+     {
+cin>>N>>X;
+int A[N],B[N];
+for (int i=0;i<N;i++)
+{
+    cin>>A[i];
+}
+for (int i=0;i<N;i++)
+{
+    cin>>B[i];
+}
+for (int i=0;i<N;i++)
+{
+    if(A[i]>=X)
+    {
+        t=t+B[i];
+    }
+}
+cout<<t<<endl;
+t=0;
+     }
+	return 0;
+}
