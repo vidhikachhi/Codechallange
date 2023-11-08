@@ -17,6 +17,7 @@ int main() {
 	        }
 	    }
 	    cout<<h;
+h=0;
 	}
 	return 0;
 }
