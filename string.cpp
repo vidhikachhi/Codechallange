@@ -11,15 +11,15 @@ int main() {
         int size = str1.size();
         bool flag = false;
         for (int i = 0; i < size; i++) {
-            if ((str1[i] == '?' && str2[i] != '?') ||
+            if (!((str1[i] == '?' && str2[i] != '?') ||
                 (str1[i] != '?' && str2[i] == '?') ||
                 (str1[i] == str2[i]) ||
-                (str1[i] == '?' && str2[i] == '?')){
+                (str1[i] == '?' && str2[i] == '?'))){
                 flag = true;
                 break;
             }
         }
-        if (flag == true) {
+        if (flag == false) {
             cout << "Yes" << endl;
         } else {
             cout << "No" << endl;
