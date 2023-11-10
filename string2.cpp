@@ -18,9 +18,8 @@ int main() {
                   if(s[i]=='A'&&s[i+1]=='A')
                   {
                       alice_marks++;
-                  }
-                  
-                  else if(s[i]=='B'&&s[i+1]=='B')
+                 }
+               else if(s[i]=='B'&&s[i+1]=='B')
                   {
                       bob_marks++;
                   }
